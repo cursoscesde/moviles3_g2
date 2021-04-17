@@ -6,7 +6,7 @@ const LoginStyles = StyleSheet.create({
         flex: 1,
     },
     logoContainer: {
-        backgroundColor: "orange",
+        backgroundColor: 'orange',
         height: Dimensions.get("screen").height * 0.4,
         borderBottomLeftRadius: 100,
         justifyContent: "center",
@@ -43,6 +43,13 @@ const LoginStyles = StyleSheet.create({
         shadowOpacity: 0.27,
         shadowRadius: 4.65,
         elevation: 6,
+    },
+    textButton: {
+        color: "white",
+        fontWeight: '400'
+    },
+    buttonGradient:{
+        flex: 1
     }
 });
 
