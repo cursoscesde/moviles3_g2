@@ -26,7 +26,9 @@ const LoginScreen = ({navigation}) => {
         const response = await fetch("https://reqres.in/api/users/2");
         const responseJson = await response.json()
         console.log(responseJson);
-        navigation.navigate("ListUsers");
+        navigation.navigate("ListUsers",{
+            nombre: name
+        });
     }
     return <View style={LoginStyles.container}>
         <StatusBar backgroundColor={Colors.primary}></StatusBar>
