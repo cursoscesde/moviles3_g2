@@ -4,6 +4,7 @@ import LoginScreen from './src/auth/screens/login/LoginScreen';
 import ListUsersScreen from './src/users/list-users/ListUsersScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import UserScreen from './src/users/user/UserScreen';
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Stack.Navigator>
         <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}} />
         <Stack.Screen name="ListUsers" component={ListUsersScreen} options={{headerShown: false}} />
+        <Stack.Screen name="User" component={UserScreen} options={{headerShown: false}} />
       </Stack.Navigator>
     </NavigationContainer>
   );
